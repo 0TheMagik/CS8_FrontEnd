@@ -1,0 +1,117 @@
+.cta {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, #f80000, #990000);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.cta-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-primary-btn {
+    background-color: white;
+    color: #f80000;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-primary-btn:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+.cta-secondary-btn {
+    background-color: transparent;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.cta-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-text {
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cta {
+        padding: 3rem 5%;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-primary-btn, .cta-secondary-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .cta-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

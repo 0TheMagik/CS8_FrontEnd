@@ -1,0 +1,142 @@
+.solutions {
+    padding: 5rem 5%;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.solutions-content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.solutions-content h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.solutions-content > p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.solution-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    padding: 0.8rem 1.5rem;
+    background-color: #e1e5ee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    background-color: #f80000;
+    color: white;
+}
+
+.tab:hover:not(.active) {
+    background-color: #d1d5e0;
+}
+
+.solution-details {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.solution-details h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.solution-details p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.solution-features {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.solution-features li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.solution-btn {
+    background-color: #f80000;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.solution-btn:hover {
+    background-color: #d50000;
+}
+
+.solutions-image {
+    flex: 1;
+}
+
+.image-container {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #444, #111);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="50" height="50" x="0" y="0" fill="%23f80000" opacity="0.3"/><rect width="50" height="50" x="100" y="100" fill="%23f80000" opacity="0.3"/></svg>') repeat;
+}
+
+@media (max-width: 992px) {
+    .solutions {
+        flex-direction: column;
+    }
+    
+    .solutions-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .solutions-content h2 {
+        font-size: 2rem;
+    }
+    
+    .solution-tabs {
+        justify-content: center;
+    }
+    
+    .image-container {
+        height: 300px;
+    }
+}
