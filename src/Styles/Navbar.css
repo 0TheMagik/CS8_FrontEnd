@@ -219,7 +219,7 @@
     color: #fff;
 }
 
-/* Indented menu items */
+
 .mega-menu-section ul li a[href^="— "] {
     padding-left: 1rem;
     position: relative;
